@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Weather</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar-top"><span class="material-icons">cloud</span><a>I Weather</a></nav>
+    <section class="items-section">
+        <!-- <div class="card">
+            <div class="close">
+                <span class="material-icons">cancel</span>
+            </div>
+            <div class="weather-status">
+                <div class="weather-icon"><img src="images/weatherIcon/black/clear.svg" alt=""></div>
+                <div class="weather-temp">12 c</div>
+                <div class="weather-cityname">milan</div>
+            </div>
+            <div class="extended-status"></div>
+            <div class="more-detail">
+                <div class="more-detail--sun">
+                    <div class="sun-set">sun rise: 05:51</div>
+                    <div class="sun-set">sun set: 19:01</div>
+                </div>
+                <div class="more-detail--wind">
+                    <div class="wind-dir">Wind Diriction: west-east</div>
+                    <div class="wind-speed">Wind Speed: 10 m/s</div>
+                </div>
+            </div>
+            <div class="more-btn"><a>Show More</a></div>
+        </div> -->
+        <div id="NewWeather" class="card">
+            <div id="addNewWeather" class="add-new">
+                <div class="addNewWeather--permote-state">
+                    <span class="material-icons">add</span>
+                    <p>click here to add new weather</p>
+                </div>
+                <div class="addNewWeather--input-state" style="display: none;">
+                    <div class="addNewWeather--input-section">
+                        <input id="cityInput" type="text" placeholder="cities name">
+                        <span class="material-icons">search</span>
+                    </div>
+                    <div class="addNewWeather--result-section">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="javascript/latlong.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-top{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: #eeeeee;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 2.25rem;
+    font-size: 1.25rem;
+}
+.navbar-top a{
+    margin: 0 .25rem;
+    font-weight: 700;
+}
+.card{
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+    position: relative;
+    padding: .25rem;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    user-select: none;
+    -moz-user-select: none;
+    font-size: .5rem;
+}
+.close:hover{
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.card:not(:last-child){
+    border-bottom: solid .15rem #eeeeee;
+}
+.weather-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.weather-icon{
+    width: 15rem;
+    height: auto;
+}
+.weather-temp,.weather-cityname{
+    font-size: 2rem;
+}
+.weather-cityname{
+    font-weight: 700;
+}
+.addNewWeather--permote-state{
+    direction: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    user-select: none;
+    -moz-user-select: none;
+    padding: .5rem;
+}
+.addNewWeather--permote-state span{
+    font-size: 3rem;
+    margin: .5rem;
+}
+.addNewWeather--permote-state span:hover,.addNewWeather--permote-state p:hover{
+    cursor: pointer;
+    color: #3d3d3d;
+}
+.addNewWeather--input-state{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.addNewWeather--input-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: .5rem 0;
+}
+.addNewWeather--input-section input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    flex-grow: 1;
+}
+.addNewWeather--result-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 70vw;
+}
+.addNewWeather--result{
+    flex-grow: 1;
+    text-align: center;
+    padding: .25rem;
+}
+.addNewWeather--result:not(:last-child){
+    border-bottom: solid .05rem #dbdbdb;
+}
+.addNewWeather--result:nth-child(odd){
+    background: #eeeeee;
+}
+.addNewWeather--result a:hover{
+    cursor: pointer;
+    color: #525252;
+    user-select: none;
+    -moz-user-select: none;
+}
+.more-btn{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+.more-btn a{
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+.more-detail{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.more-detail--sun , .more-detail--wind{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1rem 0;
+}
+.more-detail--sun div, .more-detail--wind div{
+    margin: .5rem;
+}
